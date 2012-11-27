@@ -1,0 +1,118 @@
+/*Color Swashes----------------------------------------------------------
+#302f2f Dark Grey (used on background)
+#dedede Light Grey
+#fff3d0 Tan/yellow
+#fffd53 Neon Yellow
+#a6560f Burnt Orange
+
+*/
+
+/* body background color------------------------------------------------- */
+body {
+	background-color: #302f2f;
+	width: 100%;
+	color: silver;
+}
+
+/* H1 text styles------------------------------------------------- */
+h1 {
+	font-family:'Audiowide', cursive;
+	font-size:2em;
+	max-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h3 {
+	text-align: center;
+}
+
+/* main division styles-------------------------------------------------  */
+#overall {	
+	max-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	clear: both;
+	background: #dedede;
+	opacity: 0.98;
+	padding: 1.0416667%; /* 10px */
+	border-style: outset;
+	border-width: 2px;
+	border-color: #000;
+	color: #000;
+	font-family: 'Play', sans-serif;
+}
+
+/* layout----------------------------------------------------------------- */
+
+article {
+	column-count: 3;
+	-moz-column-count:3; /* Firefox */
+	-webkit-column-count:3; /* Safari and Chrome */
+}
+
+h2 {
+	color: #fff;
+	text-shadow: 2px 2px #666;
+}
+
+
+/*links------------------------------------------------------------------*/
+a:link {
+	background: #a6560f;
+	background: -moz-radial-gradient(circle, #a6560f, #2F2727); /*firefox*/
+	background: -webkit-gradient(radial, center center, 0, center center, 460, from(#1a82f7), to(#2F2727)); /*old safari chrome*/
+	background: -webkit-radial-gradient(circle, #1a82f7, #2F2727); /*safari chrome*/
+	background: -ms-radial-gradient(circle, #1a82f7, #2F2727); /*IE*/
+	border-radius: 5px;
+	border-style: solid;
+	border-color: #fff;
+	border-width: 2px;
+	padding: 5px;
+	color: #fffd53;
+	text-decoration: none;
+	font-family: 'Prosto One', cursive;
+}
+a:visited {
+	color: #fffd53;
+}
+a:hover {
+	color: orange;
+}
+a:active {
+	color: #fff;
+}
+ul {
+	list-style-type: none;
+}
+
+/* Main Navigation Styles--------------------------------------------------*/
+nav a:link {
+	background: none;
+	border-style: none;
+	color: #fff;
+}
+nav a:visited {
+	color: #fff;
+}
+nav a:hover {
+	text-decoration: underline overline;
+	color: #a6560f
+}
+nav {
+	clear: both;
+	margin: 2.6041667%;
+	overflow: hidden;
+}
+nav li {
+	width: 20.833333%; /* 200px */
+	background: #000;
+	opacity: 0.8;
+	float: left;
+	padding: 1.0416667%; /* 10px */
+	border-style: outset;
+	border-width: 2px;
+	border-color: #fff;
+	
+}
+
