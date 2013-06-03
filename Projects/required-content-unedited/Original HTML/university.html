@@ -1,0 +1,143 @@
+
+<!-- saved from url=(0044)http://www.christchurchseattle.org/Anniv.htm -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta http-equiv="Content-Language" content="en-us">
+
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Christ Episcopal Church</title>
+<style id="wrc-middle-css" type="text/css">.wrc_whole_window{	display: none;	position: fixed; 	z-index: 2147483647;	background-color: rgba(40, 40, 40, 0.9);	word-spacing: normal;	margin: 0px;	padding: 0px;	border: 0px;	left: 0px;	top: 0px;	width: 100%;	height: 100%;	line-height: normal;	letter-spacing: normal;}.wrc_middle_main {	font-family: Segoe UI, Arial Unicode MS, Arial, Sans-Serif;	font-size: 14px;	width: 600px;	height: auto;	margin: 0px auto;	margin-top: 15%;    background: url(chrome-extension://icmlaeflemplmjndnaapfdbbnpncnbda/skin/images/background-body.jpg) repeat-x left top;	background-color: rgb(39, 53, 62);}.wrc_middle_logo {    background: url(chrome-extension://icmlaeflemplmjndnaapfdbbnpncnbda/skin/images/logo.jpg) no-repeat left bottom;    width: 140px;    height: 42px;    color: orange;    display: table-cell;    text-align: right;    vertical-align: middle;}.wrc_icon_warning {	margin: 20px 10px 20px 15px;	float: left;	background-color: transparent;}.wrc_middle_title {    color: #b6bec7;	height: auto;    margin: 0px auto;	font-size: 2.2em;	white-space: nowrap;	text-align: center;}.wrc_middle_hline {    height: 2px;	width: 100%;    display: block;}.wrc_middle_description {	text-align: center;	margin: 15px;	font-size: 1.4em;	padding: 20px;	height: auto;	color: white;	min-height: 3.5em;}.wrc_middle_actions_main_div {	margin-bottom: 15px;	text-align: center;}.wrc_middle_actions_blue_button {	-moz-appearance: none;	border-radius: 7px;	-moz-border-radius: 7px/7px;	border-radius: 7px/7px;	background-color: rgb(0, 173, 223) !important;	display: inline-block;	width: auto;	cursor: Pointer;	border: 2px solid #00dddd;}.wrc_middle_actions_blue_button:hover {	background-color: rgb(0, 159, 212) !important;}.wrc_middle_actions_blue_button:active {	background-color: rgb(0, 146, 200) !important;	border: 2px solid #00aaaa;}.wrc_middle_actions_blue_button div {	display: inline-block;	width: auto;	cursor: Pointer;	margin: 3px 10px 3px 10px;	color: white;	font-size: 1.2em;	font-weight: bold;}.wrc_middle_action_low {	font-size: 0.9em;	white-space: nowrap;	cursor: Pointer;	color: grey !important;	margin: 10px 10px 0px 10px;	text-decoration: none;}.wrc_middle_action_low:hover {	color: #aa4400 !important;}.wrc_middle_actions_rest_div {	padding-top: 5px;	white-space: nowrap;	text-align: center;}.wrc_middle_action {	white-space: nowrap;	cursor: Pointer;	color: red !important;	font-size: 1.2em;	margin: 10px 10px 0px 10px;	text-decoration: none;}.wrc_middle_action:hover {	color: #aa4400 !important;}</style><script id="wrc-script-middle_window" type="text/javascript" language="JavaScript">var g_inputsCnt = 0;var g_InputThis = new Array(null, null, null, null);var g_alerted = false;/* we test the input if it includes 4 digits   (input is a part of 4 inputs for filling the credit-card number)*/function is4DigitsCardNumber(val){	var regExp = new RegExp('[0-9]{4}');	return (val.length == 4 && val.search(regExp) == 0);}/* testing the whole credit-card number 19 digits devided by three '-' symbols or   exactly 16 digits without any dividers*/function isCreditCardNumber(val){	if(val.length == 19)	{		var regExp = new RegExp('[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}');		return (val.search(regExp) == 0);	}	else if(val.length == 16)	{		var regExp = new RegExp('[0-9]{4}[0-9]{4}[0-9]{4}[0-9]{4}');		return (val.search(regExp) == 0);	}	return false;}function CheckInputOnCreditNumber(self){	if(g_alerted)		return false;	var value = self.value;	if(self.type == 'text')	{		if(is4DigitsCardNumber(value))		{			var cont = true;			for(i = 0; i < g_inputsCnt; i++)				if(g_InputThis[i] == self)					cont = false;			if(cont && g_inputsCnt < 4)			{				g_InputThis[g_inputsCnt] = self;				g_inputsCnt++;			}		}		g_alerted = (g_inputsCnt == 4);		if(g_alerted)			g_inputsCnt = 0;		else			g_alerted = isCreditCardNumber(value);	}	return g_alerted;}function CheckInputOnPassword(self){	if(g_alerted)		return false;	var value = self.value;	if(self.type == 'password')	{		g_alerted = (value.length > 0);	}	return g_alerted;}function onInputBlur(self, bRatingOk, bFishingSite){	var bCreditNumber = CheckInputOnCreditNumber(self);	var bPassword = CheckInputOnPassword(self);	if((!bRatingOk || bFishingSite == 1) && (bCreditNumber || bPassword) )	{		var warnDiv = document.getElementById("wrcinputdiv");		if(warnDiv)		{			/* show the warning div in the middle of the screen */			warnDiv.style.left = "0px";			warnDiv.style.top = "0px";			warnDiv.style.width = "100%";			warnDiv.style.height = "100%";			document.getElementById("wrc_warn_fs").style.display = 'none';			document.getElementById("wrc_warn_cn").style.display = 'none';			if(bFishingSite)				document.getElementById("wrc_warn_fs").style.display = 'block';			else				document.getElementById("wrc_warn_cn").style.display = 'block';			warnDiv.style.display = 'block';		}	}}</script>
+<meta name="Microsoft Theme" content="expeditn 011">
+</head>
+
+<body background="exptextb.jpg" bgcolor="#FFFFFF" text="#000000" link="#993300" vlink="#666600" alink="#CC3300">
+
+<!--mstheme--><font face="Book Antiqua, Times New Roman, Times">
+
+<p><font size="6" color="#660066" face="Trebuchet MS"><b>Christ Episcopal Church &amp; The
+University of Washington</b></font></p>
+<p><font face="Trebuchet MS">"In the beginning" the church's formation was on a small scale,
+inspired by the desire of a few neighbors to establish an Episcopal church in
+the developing residential district near the university, an area called Brooklyn
+at the time. <b>Dean Milnor Roberts</b> of the College of Mines at the UW was a
+founding member.&nbsp;</font></p>
+<p><font face="Trebuchet MS">Travel between Seattle and Brooklyn was by boat or railroad until David Denny
+built the Latona Bridge in 1891.&nbsp; This hand-operated drawbridge carried
+horse-drawn traffic and streetcar tracks which extended north. The university
+moved from downtown Seattle in 1895 and the streetcar station nearest to the
+campus was called "University Station" at 42nd &amp; 14th (now
+University Way).&nbsp; The 1900 census listed about 400 people in the Brooklyn
+Addition.&nbsp; Among them were the founding families of Christ Church.&nbsp;</font></p>
+<p><font face="Trebuchet MS">Col. J. N. Gilmer and family moved to E 45th &amp; 15th NE in March
+1903.&nbsp; The family found it difficult to attend the nearest Episcopal
+church, so with neighbors they founded "the mission at University
+Station,"&nbsp; named All Saints.&nbsp; The name was later changed to
+Christ Church to avoid confusion with another All Saints parish in the
+diocese.&nbsp;&nbsp;</font></p>
+<!--mstheme--></font>
+<table border="1" width="100%" bordercolorlight="#CC9966" bordercolordark="#660000">
+  <tbody><tr>
+    <td width="14%"><!--mstheme--><font face="Book Antiqua, Times New Roman, Times"><font face="Trebuchet MS"><img border="0" src="./Anniv.1.jpg" width="123" height="187">
+      </font>
+      <p><span lang="EN"><font size="2" face="Trebuchet MS"><i>“Rector Builds His Own Little
+      Church — Rev. G. Clement King Has New Mission at University Heights
+      Ready” — Seattle P-I, Oct. 14,&nbsp; 1906</i></font></span></p><!--mstheme--></font></td>
+    <td width="43%" valign="top"><!--mstheme--><font face="Book Antiqua, Times New Roman, Times"><font face="Trebuchet MS"><img border="0" src="./Anniv.2.jpg" width="404" height="294">&nbsp;</font><!--mstheme--></font></td>
+    <td width="43%" valign="top"><!--mstheme--><font face="Book Antiqua, Times New Roman, Times"><font face="Trebuchet MS">At first they shared space with the Baptists in
+      a hall over the drugstore at 14th NE &amp; E 42nd.&nbsp; The Rev. Dr. G.
+      Clement King, first vicar, who trained in carpentry as part of his
+      missionary preparations in Scotland, undertook the construction of a wood
+      frame chapel with the aid of parishioners in 1906.&nbsp; The church was
+      dedicated on Nov. 1, 1906.&nbsp;&nbsp;</font>
+      <p><font face="Trebuchet MS">The Rev. Willis Stone was rector from 1909-1921. During his tenure the
+      congregation founded <b>Hyland Hall</b> for Episcopal women students at
+      the university.&nbsp; <b>Dr. Herbert Gowen</b>, head of the Dept. of
+      Oriental Studies at the UW was a significant member of the Christian
+      Education program at Christ Church. He spoke at the church's 50th
+      Anniversary. The church moved from mission status to a parish in
+      1912.&nbsp;&nbsp;&nbsp;</font></p>
+      <p>&nbsp;</p><!--mstheme--></font></td>
+  </tr>
+</tbody></table>
+<!--mstheme--><font face="Book Antiqua, Times New Roman, Times"><!--mstheme--></font>
+<table border="1" width="100%" bordercolorlight="#CC9966" bordercolordark="#660000">
+  <tbody><tr>
+    <td width="19%"><!--mstheme--><font face="Book Antiqua, Times New Roman, Times"><font face="Trebuchet MS"><img border="0" src="./Anniv.3.gif" width="171" height="239"></font><!--mstheme--></font></td>
+    <td width="47%"><!--mstheme--><font face="Book Antiqua, Times New Roman, Times"><font face="Trebuchet MS">Hyland Hall—“On October 19, 1910, a beautiful home, thoroughly equipped for the accommodation of sixteen young women of the University of Washington, was established by All Saints’ Church [later Christ Church] under the name of Hyland Hall. The purpose of this organization is to maintain a high standard of excellence in the life of University women, and to create an atmosphere conducive to the attainment of perfect womanhood. As an
+      average there have been fifteen young ladies in the Hall. So many more applications have been received, however, that the Board of trustees hopes in the near future to obtain a building which will accommodate 25 women.” —1911 Annual Report.&nbsp;</font><!--mstheme--></font></td>
+    <td width="34%"><!--mstheme--><font face="Book Antiqua, Times New Roman, Times"><font face="Trebuchet MS"><img border="0" src="./Anniv.4.gif" width="410" height="255">
+      </font>
+      <p><font face="Trebuchet MS">In 1914 the chapel was moved next door to act as the parish hall, and
+      the current church was built on the corner of NE 47th &amp; Brooklyn NE.  In 1921 the young women of Hyland Hall paid off the
+      remaining $1,000 mortgage of the church in memory of its rector, the Rev. W. H. Stone.</font></p><!--mstheme--></font></td>
+  </tr>
+</tbody></table>
+<!--mstheme--><font face="Book Antiqua, Times New Roman, Times">
+<p><font face="Trebuchet MS"><br>
+The Rev. Paul Boynton James was rector from 1922-1942.&nbsp; He was also
+appointed student chaplain at the university in 1922.&nbsp; His scholarship
+attracted professors from the UW including <b>Prof. William Wilson</b> and <b>Dr.
+Frederick Padelford</b>, Dean of the College of Arts and Sciences. During the
+Depression, the parish hall was donated to the YMCA for a gymnasium and moved to
+12th NE. The church was moved to the next lot south and the corner was leased to
+Shell Oil for a gas station to help stabilize church income. However, lean times
+and disaffection with Boynton's high church orientation reduced membership and
+finances to a critical level.</font> </p>
+<!--mstheme--></font>
+<table border="1" width="100%" bordercolorlight="#CC9966" bordercolordark="#660000">
+  <tbody><tr>
+    <td width="29%"><!--mstheme--><font face="Book Antiqua, Times New Roman, Times"><font face="Trebuchet MS"><img border="0" src="./Anniv.5.jpg" width="264" height="268"></font><!--mstheme--></font></td>
+    <td width="36%" valign="top"><!--mstheme--><font face="Book Antiqua, Times New Roman, Times"><font face="Trebuchet MS">Boynton died in 1942 and the church was without
+      leadership for two years.&nbsp; However, the Rev. Lewis James Bailey
+      revived university involvement during his tenure from 1944-1948.&nbsp; <b>Canterbury
+      Club</b> was created with the Rev. David Cochran as chaplain. The diocese
+      bought a house for him and his family; students were welcome there for
+      tea, supper, discussions and social gatherings.&nbsp; Gatherings were also
+      held in the "undercroft" or basement of the church, and an
+      office and lounge were added for their use when Church House was built in
+      1954.</font> <!--mstheme--></font> </td>
+    <td width="35%" valign="top"><!--mstheme--><font face="Book Antiqua, Times New Roman, Times"><font face="Trebuchet MS"><img src="./1954-72.jpg" width="360" height="204">
+      </font>
+      <p><font face="Trebuchet MS">Canterbury Club was later moved to Covenant House, closer to campus,
+      and is now <a href="http://www.uwcrossroads.com/"><b>Episcopal Crossroads. </b></a></font></p><!--mstheme--></font></td>
+  </tr>
+</tbody></table>
+<!--mstheme--><font face="Book Antiqua, Times New Roman, Times">
+<font size="3"><span lang="EN">
+<p align="JUSTIFY"><font face="Trebuchet MS"><b>Community concern:</b>&nbsp; "The campus in those
+days (1960s) was not immune to the life beyond its borders. I remember
+accompanying Bishop William Lewis, Canon Rudy Devik and students to a civil
+rights rally in Seattle. Students were returning from voter registration trips
+to the South.” <i>The Rev. Jacob (Jake) Beck, Canterbury Chaplain from 6-62 to
+6-64.&nbsp; </i>Christ Church has been involved in Neighbors in Need, Teen Feed,
+University Churches Emergency Fund and the founding of the Emergency Feeding
+Program. We have participated in the annual AIDS Walk and been part of AIDS Care
+teams. Deacon Mary Shehane, who has been the chaplain to Canterbury (now
+Episcopal Crossroads) founded the Sanctuary Art Center while at Christ
+Church.&nbsp; Currently, Christ Church houses a SHARE (Seattle Housing &amp;
+Resource Effort) indoor shelter for 30 men on a nightly basis, and provides a
+monthly meal at the Orion Center downtown.&nbsp;</font> </p>
+<p align="JUSTIFY"><font face="Trebuchet MS">Christ Church continues to offer itself as a parish home to
+students and staff of the University of Washington as well as the University
+District as a whole. We are partners with other local churches in the University
+District Ecumenical Parish. The Rev. Mary MacKenzie is our Young Adult Missioner
+interacting with young adults of our community from 18-35, single and married,
+to address their needs and concerns.&nbsp;</font></p>
+<p align="JUSTIFY"><font face="Trebuchet MS">Christ Church celebrated its 108th Anniversary Sunday,
+Nov. 6, 2011 at the 10 AM service with a Parish potluck brunch and festivities
+following.&nbsp; <font color="#660066">Congratulations to the University of
+Washington on its 150th Anniversary !</font></font></p>
+</span></font>
+<p align="JUSTIFY">&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+
+
+
+<!--mstheme--></font>
+
+
+
+
+</body></html>
