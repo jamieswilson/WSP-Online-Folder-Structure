@@ -1,0 +1,84 @@
+/*Color Swashes----------------------------------------------------------
+
+INSERT COLOR SWASHES HERE
+
+*/
+
+/* body background color------------------------------------------------- */
+body {
+	background-color: #302f2f;
+	width: 100%;
+	background-image: url("../images/HERE.jpg");
+	color: silver;
+}
+
+
+/* Responsive Design------------------------------------------------------------*/
+/*Tablet Portrait size to standard 960 */
+@media screen and (min-width: 768px) and (max-width: 959px){
+
+	h1 {
+		font-size: 1.5em;
+	}
+	aside {
+		width: 40%;
+	}
+	
+	span img {
+		width: 22%;
+	}
+}
+/*Mobile Landscape Size to Tablet Portrait */
+@media screen and (min-width: 480px) and (max-width: 767px) {
+	article {
+	column-count: 2;
+	-moz-column-count:2; /* Firefox */
+	-webkit-column-count:2; /* Safari and Chrome */
+	}
+
+	span img {
+		width: 20%;
+	}
+
+	aside {
+		float: none;
+		width: 100%;
+	}
+}
+/*Mobile Portait Size to Mobile Landscape Size */
+@media screen and (max-width: 479px) {
+
+#button {
+	display: none;
+	}
+article {
+		column-count: 1;
+		-moz-column-count:1; /* Firefox */
+		-webkit-column-count:1; /* Safari and Chrome */
+	}
+aside {
+		float: none;
+		width: 100%;
+	}
+	nav {
+		margin: auto;
+	}
+	nav li {
+		float: none;
+		width: 80%;
+	}
+	span {
+		display: none;
+	}
+}
+/*Mobile Portrait Size*/
+@media screen and (max-width: 320px) {
+
+	#home {
+		display: none;
+	}
+	h1 {
+		position: static;
+		font-size: 1em;
+	}
+}
