@@ -8,8 +8,73 @@ INSERT COLOR SWASHES HERE
 body {
 	background-color: #302f2f;
 	width: 100%;
-	background-image: url("../images/HERE.jpg");
+	background-image: url("../images/BG_03.jpg");
+	color: black;
+}
+
+h1 {
+	font-size:2em;
+	position: absolute;
+	left: -999999px
+}
+
+#home {
+	float: left;
+}
+
+/* Main Menu and Navigation---------------------------------------------- */
+
+#menu {
+	background-color: black;
+	color: white;
+	clear: both;
+	margin: 2.6041667%;
+	overflow: hidden;
+}
+
+#donate {
+	float: right;
+}
+
+/* Main Navigation Styles--------------------------------------------------*/
+
+nav a:link {
+	background: none;
+	border-style: none;
+	color: white;
+}
+nav a:visited {
+	color: white;
+}
+nav a:hover {
+	text-decoration: underline overline;
 	color: silver;
+}
+nav {
+	clear: both;
+	margin: 2.6041667%;
+	overflow: hidden;
+}
+nav li {
+	width: 20.833333%; /* 200px */
+	background: #000;
+	opacity: 0.8;
+	float: left;
+	padding: 1.0416667%; /* 10px */
+	border-style: outset;
+	border-width: 2px;
+	border-color: #fff;
+	font-family: 'Marcellus SC', serif;
+	list-style-type:none;
+	
+}
+
+
+/* Call to Action------------------------------------------------------------*/
+
+#cta {
+	background-color: black;
+	color: white;
 }
 
 
@@ -80,5 +145,6 @@ aside {
 	h1 {
 		position: static;
 		font-size: 1em;
+		text-align:center
 	}
 }
