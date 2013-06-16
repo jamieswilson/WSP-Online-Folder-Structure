@@ -12,10 +12,31 @@ body {
 	color: black;
 }
 
+/* Wrapper---------------------------------------------------------------*/
+
+#wrapper {
+	width: 924px;
+    margin: 0 auto;
+}
+
+/* Banner----------------------------------------------------------------*/
+
+#banner {
+	background-color: black;
+	background-image: url("../images/bannerBG_03.png");
+	min-height:90px; 
+	max-height:91px;
+	min-width: 100%;
+}
+
 h1 {
 	font-size:2em;
 	position: absolute;
 	left: -999999px
+}
+
+h2 {
+	font-family: 'Marcellus SC', serif;
 }
 
 #home {
@@ -26,125 +47,105 @@ h1 {
 
 #menu {
 	background-color: black;
-	color: white;
-	clear: both;
-	margin: 2.6041667%;
-	overflow: hidden;
+	
+	margin: auto;
 }
 
-#donate {
-	float: right;
+
+/* New Nav-------------------------------------------------------------------*/
+
+#nav, #nav ul { /* all lists */
+	padding: 0;
+	margin: auto;
+	list-style: none;
+	line-height: 1;
+	text-align: center;
+	padding: 5px;
 }
 
-/* Main Navigation Styles--------------------------------------------------*/
 
-nav a:link {
-	background: none;
-	border-style: none;
-	color: white;
-}
-nav a:visited {
-	color: white;
-}
-nav a:hover {
-	text-decoration: underline overline;
-	color: silver;
-}
-nav {
-	clear: both;
-	margin: 2.6041667%;
-	overflow: hidden;
-}
-nav li {
-	width: 20.833333%; /* 200px */
-	background: #000;
-	opacity: 0.8;
+
+#nav li { /* all list items */
+	display: inline;
 	float: left;
-	padding: 1.0416667%; /* 10px */
-	border-style: outset;
-	border-width: 2px;
-	border-color: #fff;
+	width: 9em; 
+	margin-top: 1px;
+	margin-bottom: 1px;
+	padding: 0;
+}
+
+#nav a {
+	display: inline-block;
+	background-color: black
+	width: 9em;
+	vertical-align: middle;
+	text-decoration:none;
+	color: white;
 	font-family: 'Marcellus SC', serif;
-	list-style-type:none;
+
+}
+
+#nav li ul { /* second-level lists */
+
+	position: absolute;
+	background: grey;
+	width: 9em;
+	left: -999em;
+}
+
+#nav li:hover ul, #nav li.sfhover ul { /* lists nested under hovered list items */
+	left: auto;
+}
+
+#nav li ul a:hover {
+	background-color: black;
+}
+
+/* the following needs some work...
+
+
+
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+
+sfHover = function() {
+	var sfEls = document.getElementById("nav").getElementsByTagName("LI");
+	for (var i=0; i<sfEls.length; i++) {
+		sfEls[i].onmouseover=function() {
+			this.className+=" sfhover";
+		}
+		sfEls[i].onmouseout=function() {
+			this.className=this.className.replace(new RegExp(" sfhover\\b"), "");
+		}
+	}
+}
+if (window.attachEvent) window.attachEvent("onload", sfHover);
+
+//--><!]]></script>
+
+*/
+
+
+/* Content----------------------------------------------------------------------*/
+
+#con {
+	clear: left;
+	padding: 5px;
+	padding-top: 15px;
+	background-color: white; 
+	min-height:325px; 
+	min-width: 80%;
 	
 }
 
 
-/* Call to Action------------------------------------------------------------*/
+/* Site Map--------------------------------------------------------------------*/
 
-#cta {
+#sitemap {
 	background-color: black;
 	color: white;
+	min-height:125px; 
+	min-width: 100%;
 }
 
 
-/* Responsive Design------------------------------------------------------------*/
-/*Tablet Portrait size to standard 960 */
-@media screen and (min-width: 768px) and (max-width: 959px){
-
-	h1 {
-		font-size: 1.5em;
-	}
-	aside {
-		width: 40%;
-	}
-	
-	span img {
-		width: 22%;
-	}
-}
-/*Mobile Landscape Size to Tablet Portrait */
-@media screen and (min-width: 480px) and (max-width: 767px) {
-	article {
-	column-count: 2;
-	-moz-column-count:2; /* Firefox */
-	-webkit-column-count:2; /* Safari and Chrome */
-	}
-
-	span img {
-		width: 20%;
-	}
-
-	aside {
-		float: none;
-		width: 100%;
-	}
-}
-/*Mobile Portait Size to Mobile Landscape Size */
-@media screen and (max-width: 479px) {
-
-#button {
-	display: none;
-	}
-article {
-		column-count: 1;
-		-moz-column-count:1; /* Firefox */
-		-webkit-column-count:1; /* Safari and Chrome */
-	}
-aside {
-		float: none;
-		width: 100%;
-	}
-	nav {
-		margin: auto;
-	}
-	nav li {
-		float: none;
-		width: 80%;
-	}
-	span {
-		display: none;
-	}
-}
-/*Mobile Portrait Size*/
-@media screen and (max-width: 320px) {
-
-	#home {
-		display: none;
-	}
-	h1 {
-		position: static;
-		font-size: 1em;
-		text-align:center
-	}
-}
+/* Responsive Design------------------------------------------------------------
