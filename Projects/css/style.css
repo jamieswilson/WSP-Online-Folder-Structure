@@ -15,7 +15,7 @@ body {
 /* Wrapper---------------------------------------------------------------*/
 
 #wrapper {
-	width: 924px;
+	width: 940px;
     margin: 0 auto;
 }
 
@@ -55,12 +55,11 @@ h2 {
 /* New Nav-------------------------------------------------------------------*/
 
 #nav, #nav ul { /* all lists */
-	padding: 0;
+	padding: 5px;
 	margin: auto;
 	list-style: none;
 	line-height: 1;
 	text-align: center;
-	padding: 5px;
 }
 
 
@@ -88,7 +87,7 @@ h2 {
 #nav li ul { /* second-level lists */
 
 	position: absolute;
-	background: grey;
+	background: red;
 	width: 9em;
 	left: -999em;
 }
@@ -101,46 +100,40 @@ h2 {
 	background-color: black;
 }
 
-/* the following needs some work...
-
-
-
-<script type="text/javascript"><!--//--><![CDATA[//><!--
-
-sfHover = function() {
-	var sfEls = document.getElementById("nav").getElementsByTagName("LI");
-	for (var i=0; i<sfEls.length; i++) {
-		sfEls[i].onmouseover=function() {
-			this.className+=" sfhover";
-		}
-		sfEls[i].onmouseout=function() {
-			this.className=this.className.replace(new RegExp(" sfhover\\b"), "");
-		}
-	}
-}
-if (window.attachEvent) window.attachEvent("onload", sfHover);
-
-//--><!]]></script>
-
-*/
-
-
 /* Content----------------------------------------------------------------------*/
 
 #con {
 	clear: left;
-	padding: 5px;
+	padding: 0px;
 	padding-top: 15px;
-	background-color: white; 
-	min-height:325px; 
+	background-color: grey; 
+	min-height:500px; 
 	min-width: 80%;
 	
+}
+
+
+#CTA {
+	margin: 0;
+	max-width: 613px;
+	float: left;
+	background: white;
+	min-height: 500px;
+}
+
+#sidebar {
+	margin: 0;
+	max-width: 307px;
+	float: right;
+	background: white;
+	min-height: 500px;
 }
 
 
 /* Site Map--------------------------------------------------------------------*/
 
 #sitemap {
+	clear: both;
 	background-color: black;
 	color: white;
 	min-height:125px; 
