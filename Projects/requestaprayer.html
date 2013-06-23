@@ -15,7 +15,7 @@
 <div id="wrapper">
 
 	<div id="banner">
-		<img id="home" src="images/Colortest_02.png" alt="Christ Episcopal Church" title="Christ Episcopal Church" />
+		<a href="index.html"><img id="home" src="images/Colortest_02.png" alt="Christ Episcopal Church" title="Christ Episcopal Church" /></a>
 		<h1 id="logo">Christ Episcopal Church</h1>
 	</div>
 
@@ -59,14 +59,19 @@
 	</div>
 
 	<div id="con">
-	Image
+	<div id="form1">
+		<img id="prayer" src="images/pray.jpg" alt="Request A Prayer" width="449" height="103">
+		
+		
+		<span id="request">
 		<h2>Request A Prayer</h2>
 		<p>
 		Sometimes we all need a little help.  If you have a prayer that you would like to 
 		have added to our Sunday service, fill out the following form.
 		</p>
-		
-		<form>
+		</span>
+			
+		<form id="input">
 		First name: <input type="text" name="firstname"><br>
 		Last name: <input type="text" name="lastname"><br>
 		Will you be in attendance during the reading of your prayer?<br>
@@ -123,15 +128,17 @@
 		<option value="30">30</option>
 		<option value="31">31</option>
 		</select><br>
+		</form>
+		<form id="box">
 		Prayer Request<br>
-		<textarea  name="prayerrequest" cols="80" rows="10"></textarea><br>
+		<textarea  name="prayerrequest" cols="50" rows="10"></textarea><br>
 		<button type="button">Submit</button>
 		</form>
-		
+	</div>	
 	</div>
 	
 	<div id="sitemap">
-	This is a sitemap
+	<li><a href="Mobile/mobileindex.html">Click Here For Mobile Site</a></li>
 	</div>
 	
 </div>

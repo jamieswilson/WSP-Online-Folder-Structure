@@ -1,6 +1,8 @@
 /*Color Swashes----------------------------------------------------------
 
-INSERT COLOR SWASHES HERE
+Dark Blue: #000033
+Blue: #000066
+Light Yellow: #FFFFCC
 
 */
 
@@ -15,15 +17,14 @@ body {
 /* Wrapper---------------------------------------------------------------*/
 
 #wrapper {
-	width: 940px;
+	width: 960px;
     margin: 0 auto;
 }
 
 /* Banner----------------------------------------------------------------*/
 
 #banner {
-	background-color: black;
-	background-image: url("../images/bannerBG_03.png");
+	background-color: #000033;
 	min-height:90px; 
 	max-height:91px;
 	min-width: 100%;
@@ -46,7 +47,7 @@ h2 {
 /* Main Menu and Navigation---------------------------------------------- */
 
 #menu {
-	background-color: black;
+	background-color: #000066;
 	
 	margin: auto;
 }
@@ -87,7 +88,7 @@ h2 {
 #nav li ul { /* second-level lists */
 
 	position: absolute;
-	background: red;
+	background: #000033;
 	width: 9em;
 	left: -999em;
 }
@@ -106,8 +107,8 @@ h2 {
 	clear: left;
 	padding: 0px;
 	padding-top: 15px;
-	background-color: grey; 
-	min-height:500px; 
+	background-color: #000066; 
+	min-height:520px; 
 	min-width: 80%;
 	
 }
@@ -115,30 +116,361 @@ h2 {
 
 #CTA {
 	margin: 0;
+	padding: 10px;
 	max-width: 613px;
 	float: left;
-	background: white;
+	background: #FFFFCC;
 	min-height: 500px;
 }
 
 #sidebar {
 	margin: 0;
+	padding: 5px;
 	max-width: 307px;
 	float: right;
-	background: white;
+	background: #FFFFCC;
 	min-height: 500px;
 }
 
+#sidebar h2 {
+	text-align: center;
+}
+
+#sidebar img {
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+/*request a prayer styles--------------------------*/
+
+#form1 {
+	margin: 0;
+	padding: 5px;
+	min-width: 95%;
+	background-color: #FFFFCC;
+	min-height: 500px;
+}
+
+#prayer {
+	float: left;
+	margin-bottom: 20px;
+}
+
+#request {
+	max-width: 50%;
+	max-height: 120px;
+	float: left;
+	padding-left: 10px;
+	margin-bottom: 20px;
+	
+}
+
+#input {
+	display: block;
+	clear: both;
+	float: left;
+	line-height: 2em;
+	max-width: 450px;
+	min-width: 449px;
+
+}
+
+#box {
+	display: block;
+	margin-right: 0;
+	float: left;
+	max-width: 40%;
+	padding-left: 10px;
+
+}
+
+/* history page styles--------------------------------*/
+
+#history {
+	clear: left;
+	padding: 5px;
+	padding-top: 15px;
+	background-color: #FFFFCC; 
+	min-height:500px; 
+	min-width: 80%;
+	
+}
 
 /* Site Map--------------------------------------------------------------------*/
 
 #sitemap {
 	clear: both;
-	background-color: black;
+	background-color: #000033;
 	color: white;
-	min-height:125px; 
+	min-height:25px; 
 	min-width: 100%;
 }
 
 
 /* Responsive Design------------------------------------------------------------
+
+/*Tablet Portrait size to standard 960 */
+@media screen and (min-width: 768px) and (max-width: 959px){
+
+/* Home Screen---------------------------*/	
+
+	body {
+	background-color: #000066;
+	width: 100%;
+	background-image: none;
+}
+
+	#CTA {
+		max-width: 60%;
+	}
+	#ctaimage {
+    width:60%;
+    height: auto;
+	}
+		
+	#sidebar {
+		max-width: 30%;
+	}
+	#wrapper {
+		width: 100%;
+    	margin: 0 auto;
+	}
+	
+	#nav li {
+		width: 7em;
+	}
+	#nav a {
+		width: 7em;
+	}
+	#nav li ul {
+		width: 7em;
+	}
+
+/* Form Screen---------------------------*/
+
+
+#form1 {
+
+	margin: 0;
+	padding: 5px;
+	min-width: 95%;
+	background-color: #FFFFCC;
+	min-height: 500px;
+	font-size: 12px;
+}
+
+#prayer {
+	width: 47%;
+	height: 90%;
+	float: left;
+	margin-bottom: 10px;
+}
+
+#request {
+	max-width: 50%;
+	max-height: 50px;
+	float: left;
+	padding-left: 5px;
+	margin-bottom: 10px;
+	
+}
+
+#input {
+	display: block;
+	clear: both;
+	float: none;
+	line-height: 2em;
+	max-width: 450px;
+	min-width: 449px;
+
+}
+
+#box {
+	float: none;
+	max-width: 40%;
+	padding-left: 10px;
+
+}
+
+/* History Screen---------------------------*/
+	#history {
+	font-size: 12px;
+	
+}
+}
+/*Mobile Landscape Size to Tablet Portrait */
+@media screen and (min-width: 480px) and (max-width: 767px) {
+	
+/* Home Screen---------------------------*/	
+	
+	body {
+		font-size: 12px;
+		background-color: #000066;
+		width: 100%;
+		background-image: none;
+	}
+	
+	#CTA {
+		max-width: 45%;
+	}
+	#ctaimage {
+    width:60%;
+    height: auto;
+	}
+		
+	#sidebar {
+		max-width: 45%;
+	}
+	#wrapper {
+		width: 100%;
+    	margin: 0 auto;
+	}
+	
+	#nav li {
+		width: 6em;
+	}
+	#nav a {
+		width: 6em;
+	}
+	#nav li ul {
+		width: 6em;
+	}
+/* Form Screen---------------------------*/
+
+#form1 {
+
+	margin: 0;
+	padding: 5px;
+	min-width: 95%;
+	background-color: #FFFFCC;
+	min-height: 500px;
+}
+
+#prayer {
+	display: none;
+}
+
+#request {
+	max-width: 50%;
+	max-height: 50px;
+	float: none;
+	padding-left: 5px;
+	margin-bottom: 10px;
+	
+}
+
+#input {
+	display: block;
+	clear: both;
+	float: none;
+	line-height: 2em;
+	max-width: 450px;
+	min-width: 449px;
+
+}
+
+#box {
+	float: none;
+	max-width: 40%;
+	padding-left: 10px;
+
+}
+
+/* History Screen---------------------------*/	
+	
+	#history {
+		padding: 2px;
+		padding-top: 2px;
+}
+	
+	
+	
+}
+/*Mobile Portait Size to Mobile Landscape Size */
+@media screen and (max-width: 479px) {
+
+/* Home Screen---------------------------*/	
+
+	body {
+		font-size: 12px;
+		background-color: #000066;
+		width: 100%;
+		background-image: none;
+	}
+	
+	#CTA {
+		max-width: 45%;
+	}
+	#ctaimage {
+   display: none;
+	}
+		
+	#sidebar {
+		max-width: 45%;
+	}
+	#wrapper {
+		width: 100%;
+    	margin: 0 auto;
+	}
+	#sidebar img {
+	display: none;
+}
+
+#sitemap {
+	font-size: 16px;
+}
+
+/* Form Screen---------------------------*/
+
+#form1 {
+
+	margin: 0;
+	padding: 5px;
+	min-width: 95%;
+	background-color: #FFFFCC;
+	min-height: 500px;
+}
+
+#prayer {
+	display: none;
+}
+
+#request {
+	max-width: 50%;
+	max-height: 50px;
+	float: none;
+	padding-left: 5px;
+	margin-bottom: 10px;
+	
+}
+
+#input {
+	display: block;
+	clear: both;
+	float: none;
+	line-height: 2em;
+	max-width: 450px;
+	min-width: 449px;
+
+}
+
+#box {
+	float: none;
+	max-width: 40%;
+	padding-left: 10px;
+
+}
+
+/* History Screen---------------------------*/
+
+	#history {
+		padding: 2px;
+		padding-top: 2px;
+}
+
+#history img {
+	display: none;
+}
+
+}
